@@ -1,0 +1,24 @@
+{
+  "name": "parcel-vue-bugs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christopher S. Case <chris.case@g33xnexus.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist/*; rm -rf .cache",
+    "build": "npm run clean && parcel build client/index.html",
+    "watch": "npm run clean && parcel watch client/index.html",
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "vue-hot-reload-api": "^2.3.0"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.0.0",
+    "node-sass": "^4.9.0",
+    "parcel": "^1.9.0",
+    "vue": "^2.5.16",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
