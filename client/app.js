@@ -2,8 +2,7 @@ import Vue from 'vue';
 
 import AppComponent from './app.vue';
 
-new Vue({
+const App = Vue.component('app', AppComponent);
+const app = new App({
     el: '#main-app',
-    template: '<app/>',
-    components: { app: AppComponent }
 });
